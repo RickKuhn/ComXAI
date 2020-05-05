@@ -1,6 +1,11 @@
 # ComXAI
 
-## Explainability, Verification, and Validation for Artificial Intelligence and Autonomous Systems
+### Files stored here
+CCMtools - some small Python utilities for mapping csv files with string values for variables into int values, and back to original string values.  This is done for faster processing by other tools. An input model should be created defining parameters and values, where column headings are parameter names and values are listed in columns.  Example given in the README for the tools.
+
+Faultloc2 - this is the code for ComXAI, originally created from the fault location tools because the fault location problem maps directly to this approach for explainable AI, as discussed in the paper "Combinatorial Methods for Explainable AI", below.
+
+## Introduction - Explainability, Verification, and Validation for Artificial Intelligence and Autonomous Systems
 AI algorithms are increasingly used in safety-critical applications, such as autonomous driving and robotics.  Unfortunately, methods developed for ultra-reliable software, such as avionics, depend on measures of structural coverage that do not apply to neural networks or other black-box functions often used in machine learning.  A different approach that can be used is to ensure that all relevant combinations of input values have been tested and verified for correct operation. Our combinatorial coverage measures provide an efficient means of achieving this type of verification, and validating it in real-world use.  (see presentation Risk, Assurance, and Explainability for Autonomous Systems). 
 
 Artificial intelligence and machine learning (AI/ML) systems typically equal or surpass human performance in applications ranging from medical systems to self-driving cars, and defense.  But ultimately a human must take responsibility, so it is essential to be able to justify the AI system's action or decision.  What combinations of factors support the decision?  Why was another action not taken?  How do we know the system is working correctly?  We consider explainability to be part of the larger problem of verification and validation for autonomous systems and artificial intelligence.
